@@ -5,6 +5,6 @@
   PersonalFinanceManagementSystem.cpp
   Wallet.cpp
   Создание кода...
-D:\Программирование\Экзамены\Personal_Finance_Management_System\main\main\PersonalFinanceManagementSystem.cpp(200): warning C4715: PersonalFinanceManagementSystem::DeleteWallet: значение возвращается не при всех путях выполнения
-D:\Программирование\Экзамены\Personal_Finance_Management_System\main\main\PersonalFinanceManagementSystem.cpp(246): warning C4715: PersonalFinanceManagementSystem::DeleteCard: значение возвращается не при всех путях выполнения
-  main.vcxproj -> D:\Программирование\Экзамены\Personal_Finance_Management_System\main\x64\Debug\main.exe
+D:\Программирование\Экзамены\Personal_Finance_Management_System-16.03.2023\main\main\PersonalFinanceManagementSystem.cpp(246): warning C4715: PersonalFinanceManagementSystem::DeleteCard: значение возвращается не при всех путях выполнения
+D:\Программирование\Экзамены\Personal_Finance_Management_System-16.03.2023\main\main\PersonalFinanceManagementSystem.cpp(200): warning C4715: PersonalFinanceManagementSystem::DeleteWallet: значение возвращается не при всех путях выполнения
+  main.vcxproj -> D:\Программирование\Экзамены\Personal_Finance_Management_System-16.03.2023\main\x64\Debug\main.exe

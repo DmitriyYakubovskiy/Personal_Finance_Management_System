@@ -91,9 +91,9 @@ void PersonalFinanceManagementSystem::showPaymentMethods()
 	{
 		if(i==0)
 		{
-			cout << "\nКошельки: " <<endl<< endl;
+			cout << "\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " <<endl<< endl;
 		}
-		cout << "[" << i + 1 << "] " << "Номер кошелька: " << m_wallets[i].getWalletNumber() << "\tБаланс: " << m_wallets[i].getBalance() << endl;
+		cout << "[" << i + 1 << "] " << "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " << m_wallets[i].getWalletNumber() << "\tпїЅпїЅпїЅпїЅпїЅпїЅ: " << m_wallets[i].getBalance() << endl;
 	}
 
 	
@@ -101,9 +101,9 @@ void PersonalFinanceManagementSystem::showPaymentMethods()
 	{
 		if(i==0)
 		{
-			cout << "\nКарты: \n" << endl;
+			cout << "\nпїЅпїЅпїЅпїЅпїЅ: \n" << endl;
 		}
-		cout << "[" << i + 1 << "] " << "Номер карты: " << m_cards[i].getCardNumber() << "\tБаланс: " << m_cards[i].getBalance() << endl;
+		cout << "[" << i + 1 << "] " << "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: " << m_cards[i].getCardNumber() << "\tпїЅпїЅпїЅпїЅпїЅпїЅ: " << m_cards[i].getBalance() << endl;
 	}
 	cout << endl;
 }
@@ -349,7 +349,7 @@ void PersonalFinanceManagementSystem::addExpense(Expense& expense)
 	else
 	{
 		system("cls");
-		cout << "Неверный номер метода оплаты или на счете не хватает средств!!" << endl << endl;
+		cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ!!" << endl << endl;
 	}
 }
 
@@ -782,14 +782,14 @@ void PersonalFinanceManagementSystem::ToFile2(Expense*& expenses, string path, s
 
 	fout.open(path);
 
-	fout << str << ": " << endl << "Категория / Потраченные деньги на товары этой категории " << endl;
+	fout << str << ": " << endl << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ / пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ " << endl;
 	for (int i = 0; i < cnt; i++)
 	{
 		fout << "[" << i + 1 << "]" << expenses[i].getCategory() << ": " << expenses[i].getPrice() << endl;
 	}
 	fout.close();
 
-	cout << "\nДанные сохранены!" << endl;
+	cout << "\nпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!" << endl;
 }
 
 void PersonalFinanceManagementSystem::ToFile4(Expense*& expenses, string path, string str, int cnt)
@@ -798,14 +798,14 @@ void PersonalFinanceManagementSystem::ToFile4(Expense*& expenses, string path, s
 
 	fout.open(path);
 
-	fout << str << ": " << endl << "Номер платежного средства / Категория / Цена / Дата" << endl;
+	fout << str << ": " << endl << "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ / пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ / пїЅпїЅпїЅпїЅ / пїЅпїЅпїЅпїЅ" << endl;
 	for (int i = 0; i < cnt; i++)
 	{
 		fout << expenses[i] << endl;
 	}
 	fout.close();
 
-	cout << "\nДанные сохранены!" << endl;
+	cout << "\nпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!" << endl;
 }
 
 int PersonalFinanceManagementSystem::allReportDay(Expense*& expenses, Date date)
@@ -952,7 +952,7 @@ istream& operator>>(istream& input, PersonalFinanceManagementSystem& PFMS)
 	{
 		if (i == 0)
 		{
-			cout << "Кошельки: " << endl;
+			cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " << endl;
 		}
 		input >> PFMS.m_wallets[i];
 	}
@@ -961,7 +961,7 @@ istream& operator>>(istream& input, PersonalFinanceManagementSystem& PFMS)
 	{
 		if (i == 0)
 		{
-			cout << "\nКарты: " << endl;
+			cout << "\nпїЅпїЅпїЅпїЅпїЅ: " << endl;
 		}
 		input >> PFMS.m_cards[i];
 	}
@@ -970,7 +970,7 @@ istream& operator>>(istream& input, PersonalFinanceManagementSystem& PFMS)
 	{
 		if (i == 0)
 		{
-			cout << "\nТраты: " << endl;
+			cout << "\nпїЅпїЅпїЅпїЅпїЅ: " << endl;
 		}
 		input >> PFMS.m_expenses[i];
 	}
@@ -983,7 +983,7 @@ ostream& operator<<(ostream& output, const PersonalFinanceManagementSystem& PFMS
 	{
 		if (i == 0)
 		{
-			cout << "Кошельки: " << endl<<endl;
+			cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " << endl<<endl;
 		}
 		output << PFMS.m_wallets[i] << endl;
 	}
@@ -992,7 +992,7 @@ ostream& operator<<(ostream& output, const PersonalFinanceManagementSystem& PFMS
 	{
 		if (i == 0)
 		{
-			cout << "\nКарты: " << endl << endl;
+			cout << "\nпїЅпїЅпїЅпїЅпїЅ: " << endl << endl;
 		}
 		output << PFMS.m_cards[i] << endl;
 	}
@@ -1001,7 +1001,7 @@ ostream& operator<<(ostream& output, const PersonalFinanceManagementSystem& PFMS
 	{
 		if (i == 0)
 		{
-			cout << "\nТраты: " << endl << endl;
+			cout << "\nпїЅпїЅпїЅпїЅпїЅ: " << endl << endl;
 		}
 		output << PFMS.m_expenses[i] << endl;
 	}
